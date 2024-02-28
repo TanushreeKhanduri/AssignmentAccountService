@@ -31,5 +31,6 @@ http://localhost:8080/swagger-ui/
 The application is developed using Java 17, SpringBoot, SpringJPA with in-memory H2 database.
 
 ## Areas of Improvement
-1. API authentication using Spring Security and add roles & views
-2. We can have another code base for functional tests using cucumber
+1. Add unit tests for entire code (could not do it due to time constraint)
+2. API authentication using Spring Security and add roles & views
+3. We can have another code base for functional tests using cucumber
