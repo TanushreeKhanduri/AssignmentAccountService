@@ -12,7 +12,7 @@ import org.springframework.stereotype.Component;
 @Component
 @Slf4j
 public class LoggingAdvice {
-    @Pointcut(value = "execution(* com.abn.*.*.*(..) )")
+    @Pointcut(value = "execution(* com.accounts.*.*.*(..) )")
     public void loggingPointcutForAllMethods() {
     }
     

@@ -33,7 +33,7 @@ public class SwaggerConfig {
                 .consumes(DEFAULT_PRODUCES_AND_CONSUMES)
                 .select()
                 .apis(RequestHandlerSelectors.any())
-                .apis(RequestHandlerSelectors.basePackage("com.abn.accounts.controller"))
+                .apis(RequestHandlerSelectors.basePackage("com.accounts.controller"))
                 .paths(PathSelectors.any())
                 .build();
     }

@@ -32,8 +32,11 @@ public class AccountService {
     }
 
     public BankAccount getAccounts(Long customerId) {
-    	return accountsRepository.findAllByCustomerId(customerId);
-        
+    	BankAccount ba = accountsRepository.findAllByCustomerId(customerId);
+    	if (null == ba) {
+    		throw new BankAccountManagerException("No customer found by given cif");
+    	}
+        return ba;
     }
     
     public Customer getCustomerInfo(Long customerId) {
